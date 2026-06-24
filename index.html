@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tourism Experience</h1>
+        <h2>Descubra destinos incríveis e viva experiências inesquecíveis com a Tourism Experience!</h2>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h3>Bem-vindo à Tourism Experience!</h3>
+            <p>Na Tourism Experience, acreditamos que viajar é mais do que apenas visitar lugares; é sobre criar memórias duradouras e vivenciar culturas únicas. Nossa missão é proporcionar experiências de viagem excepcionais que conectem você aos destinos de uma maneira autêntica e envolvente.<br> Sua próxima aventura começa aqui!</p>
+        </section>
+
+        <section class="atracoes">
+            <h3>Atrações Imperdíveis no Japão</h3>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+                
+                <div class="carousel" id="carousel">
+                    <div class="carousel-item">
+                        <img src="assets/tokyo-tower.jpeg" alt="Tokyo Tower">
+                        <p>Tokyo Tower - Um ícone da cidade de Tóquio, oferecendo vistas panorâmicas incríveis.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/fushimi-inari.jpeg" alt="Fushimi Inari">
+                        <p>Fushimi Inari - Conhecido por seus milhares de portões torii vermelhos que formam trilhas mágicas.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/kinkaku-ji.jpeg" alt="Kinkaku-ji">
+                        <p>Kinkaku-ji - O Pavilhão Dourado em Quioto, um templo deslumbrante cercado por belos jardins.</p>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+            </div>
+        </section>
+
+        <section class="culinaria">
+            <h3>Culinária Japonesa</h3>
+            <p>Descubra a rica e variada culinária japonesa, com pratos tradicionais como sushi, ramen e tempura, preparados com ingredientes frescos e técnicas artesanais.</p>
+       
+          <div class="food-grid">
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600" alt="Sushi">
+                    <h4>Sushi</h4>
+                    <p>Peixe fresco sobre arroz temperado, uma obra-prima da culinária japonesa.</p>
+                </div>
+                <div class="food-item">
+                    <img src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?w=600" alt="Ramen">
+                    <h4>Ramen</h4>
+                    <p>Sopa de macarrão com caldo rico e ingredientes variados que aquecem a alma.</p>
+                </div>
+                <div class="food-item">
+                    <img src="assets/tempura.jpeg" alt="Tempura">
+                    <h4>Tempura</h4>
+                    <p>Legumes e frutos do mar fritos em massa leve e crocante, simplesmente irresistível.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+      <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Tourism Experience</h4>
+                <p>Criando memórias inesquecíveis desde 2020. Sua jornada começa conosco!</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">🐦</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Destinos</h4>
+                <a href="#">Japão</a>
+                <a href="#">Europa</a>
+                <a href="#">América do Sul</a>
+                <a href="#">Ásia</a>
+                <a href="#">África</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <a href="#">Pacotes de Viagem</a>
+                <a href="#">Roteiros Personalizados</a>
+                <a href="#">Consultoria</a>
+                <a href="#">Seguro Viagem</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📧 contato@tourismexperience.com</p>
+                <p>📞 +55 11 9999-9999</p>
+                <p>📍 São Paulo, Brasil</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tourism Experience. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
